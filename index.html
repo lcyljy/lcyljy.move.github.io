@@ -5,174 +5,190 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,user-scalable=yes" />
 
-                <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
+        <meta property="og:site_name" content="babyparty" />
+        <meta property="og:title" content="저의 첫 자취방에 여러분을 초대합니다" />
+        <meta property="og:description" content="2020년 11월 14일 토요일 오후 8시 30분, 저희 집에서 식사 어떠신가요?" />
+        <meta property="og:image" content="https://user-images.githubusercontent.com/35355087/98389322-39fd8a80-2097-11eb-9d5d-c2461ea411e4.png" />
+        <meta property="og:image" content="https://user-images.githubusercontent.com/35355087/98392118-e7be6880-209a-11eb-9777-4aa756940d69.png" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="lcyljy.github.io" />
+
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
         <style>
-            * {
-                margin: 0;
-                padding: 0;
-                -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-                -moz-tap-highlight-color: rgba(0, 0, 0, 0);
-                -webkit-text-size-adjust: 100%;
-            }
+        * {
+            margin: 0;
+            padding: 0;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+            -webkit-text-size-adjust: 100%;
+        }
 
-            html,body {
-                height: 100%;
-            }
+        html,body {
+            height: 100%;
+        }
 
-            body {
-                background-color: #eee;
-            }
+        body {
+            background-color: #eee;
+        }
 
-            #wrap {
-                max-width: 500px;
-                margin: 0 auto;
-                background-color: #fff;
-                height: auto;
-            }
+        #wrap {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #fff;
+            height: auto;
+        }
 
-            .img100 {
-                max-width:100%;
-                width: auto !important;
-                width: 100%;
-            }
+        .img100 {
+            max-width: 100%;
+            width: auto !important;
+            width: 100%;
+        }
 
-            #autoplay, .slide_wrap {
-                position:relative;
-                width:100%;
-                overflow:hidden;
-            }
+        #autoplay, .slide_wrap {
+            position:relative;
+            width:100%;
+            overflow:hidden;
+        }
 
-            .content_wrap {
-                font-size: 14px;
-                text-align: center;
-                padding-top: 15px;
-                margin: 0 15px;
-                color: #8d968c;
-                line-height: 20px;
-            }
+        .content_wrap {
+            font-size: 14px;
+            text-align: center;
+            padding-top: 15px;
+            margin: 0 15px;
+            color: #8d968c;
+            line-height: 20px;
+        }
 
-            .content_wrap h1 {
-                font-size: 15px;
-                font-weight: bold;
-                text-align: center;
-                padding-bottom: 15px;
-                color: #50a27f;
-            }
+        .content_wrap h1 {
+            font-size: 15px;
+            font-weight: bold;
+            text-align: center;
+            padding-bottom: 15px;
+            color: #50a27f;
+        }
 
-            .content_wrap h1 img{
-                height: 40px;
-                vertical-align: middle;
-            }
+        .content_wrap h1 img {
+            height: 40px;
+            vertical-align: middle;
+        }
 
-            .contact_wrap{
-                text-align: center;
-                padding-top: 15px;
-            }
+        .contact_wrap {
+            text-align: center;
+            padding-top: 15px;
+        }
 
-            .contact_wrap a{
-                font-size:15px;
-                color: #2f302c;
-                font-weight: bold;
-                text-decoration: none;
-                display : inline-block;
-                padding: 10px;
-                min-width: 40px;
-                border-radius: 5px;
-            }
-            .contact_wrap a.bg1 {
-                background-color: #bbedc8;
-            }
-            .contact_wrap a.bg2 {
-                background-color: #ccf2cb;
-            }
-            .contact_wrap img{
-                height: 15px;
-                padding-right: 5px;
-                vertical-align: middle;
-                position: relative;
-                top: -2px;
-            }
+        .contact_wrap a {
+            font-size: 15px;
+            color: #2f302c;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px;
+            min-width: 40px;
+            border-radius: 5px;
+        }
 
-            .date_wrap {
-                margin: 0 15px;
-                padding: 20px 0 0 0;
-                text-align: left;
-                font-size: 13px;
-            }
+        .contact_wrap a.bg1 {
+            background-color: #bbedc8;
+        }
 
-            .date_wrap img{
-                height: 15px;
-                vertical-align: middle;
-                position: relative;
-                top: -2px;
-                padding-right: 5px;
-            }
+        .contact_wrap a.bg2 {
+            background-color: #9bddbe;
+        }
 
-            .addr_wrap {
-                margin: 0 15px;
-                padding: 10px 0;
-                text-align: left;
-                font-size: 13px;
-            }
+        .contact_wrap img {
+            height: 15px;
+            padding-right: 5px;
+            vertical-align: middle;
+            position: relative;
+            top: -2px;
+        }
 
-            .addr_wrap img {
-                height: 15px;
-                vertical-align: middle;
-                position: relative;
-                top: -2px;
-                padding-right:5px;
-            }
-            .map_wrap {
-                margin: 0 15px;
-                height: 200px;
-                background-color: #ddd;
-                text-align: center;
-                font-size: 14px;
-            }
-            .tras_wrap {
-                margin: 0 15px;
-                font-size: 14px;
-                padding-bottom: 20px;
-            }
+        .date_wrap {
+            margin: 0 15px;
+            padding: 20px 0 0 0;
+            text-align: left;
+            font-size: 13px;
+        }
 
-            .tras_wrap div{
-                padding-top: 10px;
-            }
-            .tras_wrap div.what{
-                color:#888;
-            }
-            .tras_wrap div.is{
-                color: #8d968c;
-                font-weight: bold;
-                margin: 0 20px;
-            }
+        .date_wrap img {
+            height: 15px;
+            vertical-align: middle;
+            position: relative;
+            top: -2px;
+            padding-right: 5px;
+        }
 
-            .tras_wrap img {
-                height: 14px;
-                vertical-align: middle;
-                position: relative;
-                top: -3px;
-                padding-right: 5px;
-            }
-            .copy {
-                font-size:12px;
-                color:#888;
-                text-align:center;
-                padding-top:15px;
-                padding-bottom:15px;
-            }
-            .slick-prev,.slick-next {
-                display:none !important;
-            }
+        .addr_wrap {
+            margin: 0 15px;
+            padding: 10px 0;
+            text-align: left;
+            font-size: 13px;
+        }
+
+        .addr_wrap img {
+            height: 15px;
+            vertical-align: middle;
+            position: relative;
+            top: -2px;
+            padding-right: 5px;
+        }
+
+        .map_wrap {
+            margin: 0 15px;
+            height: 200px;
+            background-color: #ddd;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .tras_wrap {
+            margin: 0 15px;
+            font-size: 14px;
+            padding-bottom: 20px;
+        }
+
+        .tras_wrap div {
+            padding-top: 10px;
+        }
+
+        .tras_wrap div.what {
+            color: #888;
+        }
+
+        .tras_wrap div.is {
+            color: #8d968c;
+            font-weight: bold;
+            margin: 0 20px;
+        }
+
+        .tras_wrap img {
+            height: 14px;
+            vertical-align: middle;
+            position: relative;
+            top: -3px;
+            padding-right: 5px;
+        }
+        .copy {
+            font-size:12px;
+            color:#888;
+            text-align:center;
+            padding-top:15px;
+            padding-bottom:15px;
+        }
+        .slick-prev,.slick-next {
+            display:none !important;
+        }
         </style>
     </head>
     <body>
         <div id="wrap">
             <div class="slide_wrap">
                 <div id="autoplay" style="display:none;">
-
-                    <img src="images/preview.jpg" class="img100" />
-                    <img src="images/view.jpg" class="img100" />
+                    <img src="https://user-images.githubusercontent.com/35355087/98392118-e7be6880-209a-11eb-9777-4aa756940d69.png" class="img100" />
+                    <img src="https://user-images.githubusercontent.com/35355087/98387473-c5c1e780-2094-11eb-8ffc-a5cc96478315.jpg" class="img100" />
+                    <img src="https://user-images.githubusercontent.com/35355087/98387479-c6f31480-2094-11eb-9bf0-4fc85441a86f.jpg" class="img100" />
+                    <img src="https://user-images.githubusercontent.com/35355087/98389322-39fd8a80-2097-11eb-9d5d-c2461ea411e4.png" class="img100" />
                 </div>
             </div>
             <div class="content_wrap">
@@ -194,9 +210,7 @@
                 <span><img src="https://cdn4.iconfinder.com/data/icons/miu/24/house-home-real_estate-property-glyph-128.png" alt="place" />
                     초대장소 : <strong>경기도 안산시 상록구 590-11 305호</strong></span>
             </div>
-            <div class="map_wrap">
-
-            </div>
+            <div class="map_wrap" id="map"></div>
             <div class="tras_wrap">
                 <div>
                     <div class="what"><img src="https://cdn2.iconfinder.com/data/icons/vehicles-7/24/vehicles-04-128.png" alt="metro" />
@@ -207,65 +221,73 @@
                     <div class="what"><img src="https://cdn2.iconfinder.com/data/icons/vehicles-7/24/vehicles-12-128.png" alt="metro" />버스</div>
                     <div class="is">31,52,76,101,37,37-1,39,530</div>
                 </div>
+                <div>
+                    <center>
+                <div>★★★★★</div>
+                <div class="is">주차공간이 협소하여 차를 댈 수 없으니 
+                    <p></p>가급적 대중교통을 이용바랍니다</div>
+                <div class="is">가장 가까운공영주차장이 약 800m거리에 있습니다</div>
+                    </center>
+                </div>
             </div>
-            <div class="copy">
+                <div class="copy">
                 @ Copyright 2020, Changyoung Lee
             </div>
         </div>
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?signed_in=true"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
-            <script>
-            var latlng="37.307025, 126.857602";
-
+        <script>
+            var latlng = "37.307025, 126.857602"; 
+        
             function initMap() {
                 if (latlng.length <= 0)
                     return false;
                 arr = latlng.split(",");
                 if (arr.length <= 1)
                     return false;
-
-            var myLatLng = {
-                lat : parseFloat($.trim(arr[0])),
-                lng : parseFloat($.trim(arr[1]))
-            };
-            var map = new google.maps.Map(document.getElementById('map'), {
-                zoom : 17,
-                center : myLatlng
-            });
-            var arr = [];
-
-            new google.maps.Marker({
-                position : myLatlng,
-                map : map
-            });
-        }
-        $(function(e) {
+        
+                var myLatLng = {
+                    lat : parseFloat($.trim(arr[0])),
+                    lng : parseFloat($.trim(arr[1]))
+                };
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom : 17,
+                    center : myLatLng
+                });
+                var arr = [];
+        
+                new google.maps.Marker({
+                    position : myLatLng,
+                    map : map
+                });
+            }
+            $(function(e) {
                 initMap();
-
+                
                 var targetEle = $("#autoplay");
-                targetEle.find("img").css("cssText", "width:" + targetEle.width() + "px !important;");
+                targetEle.find("img").css("cssText" , "width:" + targetEle.width() + "px !important;");
                 targetEle.slick({
                     slidesToShow : 1,
                     slidesToScroll : 1,
                     autoplay : true,
                     autoplaySpeed : 2000,
                     dots: false,
-                    infinite :true,
-                    variableWidth : true
+                      infinite: true,
+                      variableWidth: true
                 });
                 targetEle.css({"display" : "block"});
                 var tmpHeight = 0;
                 targetEle.find("img").first().load(function(e) {
                     targetEle.find("img").each(function(k, v) {
                         var _this = $(this);
-                        if( tmpHeight == 0 || tmpHeight > _this.height()) {
+                        if( tmpHeight == 0 || tmpHeight > _this.height() ) {
                             tmpHeight = _this.height();
                         }
                     });
                     $(".slide_wrap").height(tmpHeight);
                 });
-            });
-        </script>   
+            });</script>   
     </body>
 </html>
